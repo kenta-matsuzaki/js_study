@@ -14,7 +14,7 @@ console.log(10 / 3);
 console.log(10 % 3);
 console.log(10 ** 3);
 
-//定数と変数
+// 定数と変数
 let price = 150;
 
 console.log(price * 140);
@@ -46,7 +46,7 @@ console.log(typeof null);
 
 console.log(parseInt('5', 10) + 3); // parseInt 引数の文字列を指定した進数の整数値に変換
 
-//if条件分岐
+// if条件分岐
 const score = 60;
 // if (score >= 80) {
 //   console.log('Great!');
@@ -58,7 +58,7 @@ const score = 60;
 
 score >= 80? console.log('Great!') : console.log('OK...!') //短縮できるがあまり使わない
 
-//論理演算子
+// 論理演算子
 // && なおかつ
 // || もしくは
 // ! 〜ではない
@@ -73,3 +73,22 @@ if (score >= 50) {
 if (score >= 50 && name === 'matsuzaki'){
   console.log('Good job!');
 }
+
+// switchの条件分岐
+const signal = 'white';
+
+switch (signal) {
+  case 'red':
+    console.log('stop!');
+    break;
+  case 'yellow':
+    console.log('caution!');
+    break;
+  case 'blue':
+  case 'green': //2つ指定できる
+    console.log('go!');
+    break;
+  default:
+    console.log('wrong signal!');
+    break;
+  }
