@@ -15,17 +15,17 @@ console.log(10 % 3);
 console.log(10 ** 3);
 
 //定数と変数
-// let price = 150;
+let price = 150;
 
-// console.log(price * 140);
-// console.log(price * 160);
+console.log(price * 140);
+console.log(price * 160);
 
-// price = 170;
+price = 170;
 
-// console.log(price * 140);
-// console.log(price * 160);
+console.log(price * 140);
+console.log(price * 160);
 
-let price = 500
+price = 500
 
 price = price + 100;
 price += 100; //同上
@@ -36,3 +36,10 @@ price--; // price -= 1
 price++; //price += 1
 
 console.log(price);
+
+// データ型
+console.log(typeof 'hello');
+console.log(typeof 5);
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
