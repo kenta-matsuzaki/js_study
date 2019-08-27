@@ -43,3 +43,5 @@ console.log(typeof 5);
 console.log(typeof true);
 console.log(typeof undefined);
 console.log(typeof null);
+
+console.log(parseInt('5', 10) + 3); // parseInt 引数の文字列を指定した進数の整数値に変換
