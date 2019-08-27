@@ -111,4 +111,12 @@ switch (signal) {
   //   console.log(`${hp} HP left!`);
   // }
 
-  
+  // continue,breakを使用
+  for (let i = 1; i <= 10; i++) {
+    if (i === 4) {
+      continue; // 4がスキップされる
+    } else if (i === 6) {
+      break; // 6になる前にストップされる
+    }
+    console.log(i);
+  }
