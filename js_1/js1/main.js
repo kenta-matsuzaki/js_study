@@ -98,3 +98,17 @@ switch (signal) {
   for(let i = 1; i <= 10; i++) {
     console.log(`${i}hello`);
   }
+
+  // whileを使用したループ処理
+  let hp = 200;
+  
+  while (hp > 0) {
+    console.log(`${hp} HP left!`);
+    hp -= 50;
+  }
+
+  // for (let hp = 200; hp > 0; hp -= 50) {
+  //   console.log(`${hp} HP left!`);
+  // }
+
+  
