@@ -45,3 +45,13 @@ console.log(typeof undefined);
 console.log(typeof null);
 
 console.log(parseInt('5', 10) + 3); // parseInt 引数の文字列を指定した進数の整数値に変換
+
+//if条件分岐
+const score = 40;
+if (score >= 80) {
+  console.log('Great!');
+} else if (score >= 60) {
+  console.log('Good');
+} else {
+  console.log('OK');
+}
