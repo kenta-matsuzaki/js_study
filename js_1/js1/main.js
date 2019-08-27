@@ -47,11 +47,29 @@ console.log(typeof null);
 console.log(parseInt('5', 10) + 3); // parseInt 引数の文字列を指定した進数の整数値に変換
 
 //if条件分岐
-const score = 40;
-if (score >= 80) {
-  console.log('Great!');
-} else if (score >= 60) {
-  console.log('Good');
-} else {
-  console.log('OK');
+const score = 60;
+// if (score >= 80) {
+//   console.log('Great!');
+// } else if (score >= 60) {
+//   console.log('Good');
+// } else {
+//   console.log('OK...!');
+// }
+
+score >= 80? console.log('Great!') : console.log('OK...!') //短縮できるがあまり使わない
+
+//論理演算子
+// && なおかつ
+// || もしくは
+// ! 〜ではない
+const name = 'matsuzaki';
+
+if (score >= 50) {
+  if (name === 'matsuzaki') {
+    console.log('Good job!');
+  }
+}
+
+if (score >= 50 && name === 'matsuzaki'){
+  console.log('Good job!');
 }
