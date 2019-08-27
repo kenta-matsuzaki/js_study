@@ -92,3 +92,9 @@ switch (signal) {
     console.log('wrong signal!');
     break;
   }
+
+  // forを使用したループ処理
+
+  for(let i = 1; i <= 10; i++) {
+    console.log(`${i}hello`);
+  }
