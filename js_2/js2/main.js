@@ -193,7 +193,20 @@
 
   console.log(Math.floor(Math.random() * 6 + 1)); //Math.floor 小数点を切り捨てる
 
-  
 
+// Dateオブジェクト
+  const day = new Date();
+  console.log(day);
+
+  console.log(day.getFullYear());
+  console.log(day.getMonth()); // 0 -> 1月 で始まり、0から11で表現する
+  console.log(day.getDate());
+  console.log(day.getDay()); // 0 -> 日曜日 で始まり、0-6で表現される
+  console.log(day.getHours());
+  console.log(day.getMinutes());
+  console.log(day.getSeconds());
+  console.log(day.getMilliseconds());
+
+  console.log(day.getTime()); // UTC(協定世界時)の1970年1月1日00時00分00秒からの経過ミリ秒を返してくれる
 
 }
