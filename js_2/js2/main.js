@@ -146,4 +146,31 @@
   const o1 = {a: 1};
   const o2 = {...o1, b: 2};
   console.log(o2);
+
+
+// 分割代入
+  const numbers = [1, 2];
+  // const num1 = numbers[0];
+  // const num2 = numbers[1];
+  const [num1, num2] = numbers;
+  console.log(num1);
+  console.log(num2);
+
+  const numbers1 = [1, 2, 3, 8];
+  const [num3, num4, ...rest] = numbers1;
+  console.log(num3);
+  console.log(num4);
+  console.log(rest);
+
+  const player1 = {
+    name: 'kenta',
+    score: 10245,
+    hp: 999,
+    mp: 555,
+  };
+  const {name, score, ...points} = player1;
+  console.log(name);
+  console.log(score);
+  console.log(points);
+
 }
