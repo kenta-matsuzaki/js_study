@@ -122,17 +122,17 @@ switch (signal) {
   }
 
   // 関数
-function showAd() {
+function showAd(message = 'AD') { // 仮引数
   console.log('------------')
-  console.log('-----AD-----')
+  console.log(`-----${message}-----`)
   console.log('------------')
 }
 
-  showAd();
+  showAd('header ad'); // 実引数
 
   console.log('tom is great!')
   console.log('ken is bad!')
 
+  showAd('footer ad');
   showAd();
-
   
