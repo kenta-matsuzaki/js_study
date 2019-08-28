@@ -120,4 +120,30 @@
   const d = a.filter(item => item % 2 === 0);
   console.log(d); // filterは真偽値がtrueのものだけを返してくれる
 
+// オブジェクトを操作
+  const o = {
+    a: 1,
+    b: 2,
+  };
+
+  console.log(Object.keys(o));
+  console.log(Object.values(o));
+  console.log(Object.entries(o)); // entriesは全体を配列で取ってきてくれる
+
+  Object.keys(o).forEach(key => {
+    console.log(`${key}: ${o[key]}`);
+  });
+
+// スプレッド演算子
+  const g = [10, 20];
+  const h = [1, 2, ...g]; // ...がスプレッド演算子 スプレッド演算子は参照ではない
+  console.log(h);
+
+  const j = [10, 20]; 
+  const sum = (a, b) => a + b;
+  console.log(sum(...j));
+
+  const o1 = {a: 1};
+  const o2 = {...o1, b: 2};
+  console.log(o2);
 }
