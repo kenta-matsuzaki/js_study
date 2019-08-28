@@ -1,5 +1,7 @@
 'use strict';
 
+{
+
 console.log('hello world!!!');
 console.log('helloooooooo');
 console.log('hey');
@@ -165,3 +167,6 @@ function showAd(message = 'AD') { // 仮引数
 
   f();
   console.log(x);
+
+
+}
