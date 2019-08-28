@@ -173,4 +173,27 @@
   console.log(score);
   console.log(points);
 
+
+// 文字列の操作
+  const str = 'hello';
+
+  console.log(str.length);
+  console.log(str.substring(1, 3)); // substring 第一引数の番目と第二引数の前の番目を選択する。
+  console.log(str[1]);
+
+
+// Mathオブジェクト
+  console.log(Math.PI); // 円周率を出してくれる
+  
+  console.log(Math.random()); // 0以上1未満のランダムな数値を生成するメソッド
+
+  // Math.random() -> 0...0.999999
+  // Math.random() * 6 -> 0...5.9999999
+  // Math.floor(Math.random() * 6 + 1) -> 1...6
+
+  console.log(Math.floor(Math.random() * 6 + 1)); //Math.floor 小数点を切り捨てる
+
+  
+
+
 }
