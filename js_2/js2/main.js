@@ -92,4 +92,32 @@
   console.log(a);
   console.log(removed);
 
+  //forEach
+  const f = [1, 5, 10, 100];
+  for(let i = 0; i < f.length; i++) {
+    console.log(f[i]);
+  }
+
+  f.forEach((item, index) => {
+    console.log(`${index}:${item}`);
+  });
+
+// map,filter
+  const m = [1, 2, 5, 10];
+
+  const b = [];
+  m.forEach(item => {
+    b.push(item * 2);
+  });
+  console.log(b);
+
+  // const c = m.map(item => {
+  //   return item * 2;
+  // });
+  const c = m.map(item => item * 2);
+  console.log(c);
+
+  const d = a.filter(item => item % 2 === 0);
+  console.log(d); // filterは真偽値がtrueのものだけを返してくれる
+
 }
