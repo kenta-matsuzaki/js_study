@@ -13,10 +13,21 @@
 
 // オブジェクト
   const player = {
-    name: 'matsuzaki',
+    name: 'matsuzaki', // プロパティ　名前(キー)と値で構成される
     score: 99,
   };
   
   console.log(player);
-  
+  console.log(player.name);
+  console.log(player['name']);
+
+  player.score = 100;
+  console.log(player);
+
+  player.email = 'kenta.com';
+  console.log(player);
+
+  delete player.score; // 要素を削除する
+  console.log(player);
+
 }
