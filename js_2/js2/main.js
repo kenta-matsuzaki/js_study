@@ -209,4 +209,34 @@
 
   console.log(day.getTime()); // UTC(協定世界時)の1970年1月1日00時00分00秒からの経過ミリ秒を返してくれる
 
+  const day1 = new Date(2019, 8);
+  day1.setHours(14, 23, 30); // 時間、分、秒を設定できる
+
+  console.log(day1);
+
+  const day3 = new Date(2019, 8, 27);
+  const day4 = new Date(2019, 8, 28);
+  console.log((day4 - day3) / (24 * 60 * 60 * 1000)); // 　日単位での計算結果になる
+
+
+// windowオブジェクト
+  // window.alert('hello');
+  // alert('hey'); // windowは省略できる
+
+  // const answer = confirm('are you sure?');
+  // console.log(answer); // okならtrue キャンセルならfalse が返ってくる
+
+
+// setInterval
+  let i = 0; //カウンター用の変数
+
+  const showTime = () => {
+    console.log(new Date());
+    i++;
+    if(i === 3) {
+      clearInterval(timerId);
+    }
+  };
+
+  let timerId = setInterval(showTime, 1000); // showTimeに()をつけないことに注意!
 }
