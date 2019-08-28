@@ -152,3 +152,16 @@ function showAd(message = 'AD') { // 仮引数
   const double = a => a * 2; // アロー関数は仮引数が一つなら()を省略できる
 
   console.log(double(12));
+
+  // スコープ
+
+  const x = 2; // ブロックの外で宣言された定数は全ての範囲で有効でグローバルスコープという
+
+  function f() {
+    // const x = 1; // ブロック内の定数はブロック外では使えない
+                // ブロック外で既に定数が宣言されていても同名の場合ブロック内の定数が優先される 
+    console.log(x);
+  }
+
+  f();
+  console.log(x);
