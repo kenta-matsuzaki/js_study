@@ -228,15 +228,34 @@
 
 
 // setInterval
-  let i = 0; //カウンター用の変数
+  // let i = 0; //カウンター用の変数
 
-  const showTime = () => {
+  // const showTime = () => {
+  //   console.log(new Date());
+  //   i++;
+  //   if(i === 3) {
+  //     clearInterval(timerId);
+  //   }
+  // };
+
+  // let timerId = setInterval(showTime, 1000); // showTimeに()をつけないことに注意!
+
+
+// setTimeout 指定した時間の後に1回だけ処理を実行するためのメソッド
+  let i = 0;
+  const showTime1 = () => {
     console.log(new Date());
+    let timerId = setTimeout(showTime1, 1000); // setTimeoutで繰り返し処理をすることもできる
     i++;
-    if(i === 3) {
-      clearInterval(timerId);
+    if (i > 2) {
+      clearTimeout(timerId);
     }
   };
 
-  let timerId = setInterval(showTime, 1000); // showTimeに()をつけないことに注意!
+  showTime1();
+
+  // setIntervalは一定時間ごとに処理を実行する命令
+  // setTimeoutはあくまでも一定時間後に処理を実行する命令
+  // システムに負荷をかけずに繰り返し処理を行いたい場合はsetTimeout()もよく使われる
+
 }
