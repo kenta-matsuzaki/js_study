@@ -73,6 +73,5 @@
   tsubasa.kick();
   console.log(tsubasa.number);
   tsubasa.showInfo();
-  aaa
 
 }
