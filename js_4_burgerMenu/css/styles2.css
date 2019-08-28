@@ -11,7 +11,20 @@ body {
   overflow-x: hidden;
 }
 
+#cover {
+  background: #000;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
 #menu {
+  z-index: 2;
   position: absolute;
   top: 0;
   right: -180px;
@@ -26,4 +39,16 @@ body {
 #show, #hide {
   float: right;
   cursor: pointer;
+}
+
+body.menu-open {
+  overflow-y: hidden;
+}
+
+body.menu-open #cover {
+  display: block;
+}
+
+body.menu-open #menu {
+  right: 0;
 }
