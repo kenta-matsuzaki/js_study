@@ -74,4 +74,15 @@
   console.log(tsubasa.number);
   tsubasa.showInfo();
 
+// 配列の要素を操作
+  const a = [1, 5, 10];
+
+  a.unshift(100); // 先頭に100を追加
+  a.push(200, 300) // 末尾に200と300を追加
+  console.log(a);
+
+  a.shift(); //先頭の要素を削除
+  a.pop(); // 末尾の要素を削除
+  console.log(a);
+
 }
