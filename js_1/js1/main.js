@@ -136,14 +136,19 @@ function showAd(message = 'AD') { // 仮引数
   showAd('footer ad');
   showAd();
 
-  const sum = function sum(a, b, c) {
-    // console.log(a + b + c);
-    return a + b + c;
-  };
+  // const sum = function(a, b, c) {
+  //   return a + b + c;
+  // };
 
-  // sum(1, 2, 3);
-  // sum(3, 4, 5);
-  const total = sum(1, 2, 3) + sum(3, 4, 5);
-  console.log(total);
+  // const sum = (a, b, c) => { // アロー関数
+  //   return a + b + c;
+  // };
 
-  
+  // const sum = (a, b, c) => a + b + c; // 一行でも書ける
+
+  // const total = sum(1, 2, 3) + sum(3, 4, 5);
+  // console.log(total);
+
+  const double = a => a * 2; // アロー関数は仮引数が一つなら()を省略できる
+
+  console.log(double(12));
