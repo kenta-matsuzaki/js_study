@@ -120,3 +120,19 @@ switch (signal) {
     }
     console.log(i);
   }
+
+  // 関数
+function showAd() {
+  console.log('------------')
+  console.log('-----AD-----')
+  console.log('------------')
+}
+
+  showAd();
+
+  console.log('tom is great!')
+  console.log('ken is bad!')
+
+  showAd();
+
+  
