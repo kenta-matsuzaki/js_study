@@ -32,7 +32,7 @@
 
 
 // クラス
-  class Player {
+  class Player { // 親クラス
     constructor(name, score) { // メソッド
       this.name = name;
       this.score = score;
@@ -47,6 +47,16 @@
     }
   }
 
+  class SoccerPlayer extends Player { //extendsでクラスの継承ができる
+    constructor(name, score, number) {
+      super(name, score); // superで親クラスのconstructorを呼ぶことができる
+      this.number = number;
+    }
+    kick() {
+      console.log('Gooooaaal!');
+    }
+  }
+
   const matsuzaki = new Player('tmatsuzaki', 65); // インスタンス化
   const bunji = new Player('bunji', 90);
 
@@ -57,4 +67,11 @@
   matsuzaki.showInfo();
 
   Player.showVersion();
+
+  const tsubasa = new SoccerPlayer('tsubasa', 99, 10);
+
+  tsubasa.kick();
+  console.log(tsubasa.number);
+  tsubasa.showInfo();
+
 }
