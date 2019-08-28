@@ -1,7 +1,7 @@
 'use strict';
 
 {
-// 配列
+// 配列 ---------------------------
   // const scores = [80, 90, 40];
   // console.log(scores);
 
@@ -31,7 +31,7 @@
   // console.log(player);
 
 
-// クラス
+// クラス ---------------------------
   class Player { // 親クラス
     constructor(name, score) { // メソッド
       this.name = name;
@@ -74,7 +74,7 @@
   console.log(tsubasa.number);
   tsubasa.showInfo();
 
-// 配列の要素を操作
+// 配列の要素を操作 ---------------------------
   const a = [1, 5, 10];
 
   a.unshift(100); // 先頭に100を追加
@@ -92,7 +92,8 @@
   console.log(a);
   console.log(removed);
 
-  //forEach
+
+//forEach ---------------------------
   const f = [1, 5, 10, 100];
   for(let i = 0; i < f.length; i++) {
     console.log(f[i]);
@@ -102,7 +103,7 @@
     console.log(`${index}:${item}`);
   });
 
-// map,filter
+// map,filter ---------------------------
   const m = [1, 2, 5, 10];
 
   const b = [];
@@ -120,7 +121,7 @@
   const d = a.filter(item => item % 2 === 0);
   console.log(d); // filterは真偽値がtrueのものだけを返してくれる
 
-// オブジェクトを操作
+// オブジェクトを操作 ---------------------------
   const o = {
     a: 1,
     b: 2,
@@ -134,7 +135,7 @@
     console.log(`${key}: ${o[key]}`);
   });
 
-// スプレッド演算子
+// スプレッド演算子 ---------------------------
   const g = [10, 20];
   const h = [1, 2, ...g]; // ...がスプレッド演算子 スプレッド演算子は参照ではない
   console.log(h);
@@ -148,7 +149,7 @@
   console.log(o2);
 
 
-// 分割代入
+// 分割代入 ---------------------------
   const numbers = [1, 2];
   // const num1 = numbers[0];
   // const num2 = numbers[1];
@@ -174,7 +175,7 @@
   console.log(points);
 
 
-// 文字列の操作
+// 文字列の操作 ---------------------------
   const str = 'hello';
 
   console.log(str.length);
@@ -182,7 +183,7 @@
   console.log(str[1]);
 
 
-// Mathオブジェクト
+// Mathオブジェクト ---------------------------
   console.log(Math.PI); // 円周率を出してくれる
   
   console.log(Math.random()); // 0以上1未満のランダムな数値を生成するメソッド
@@ -194,7 +195,7 @@
   console.log(Math.floor(Math.random() * 6 + 1)); //Math.floor 小数点を切り捨てる
 
 
-// Dateオブジェクト
+// Dateオブジェクト ---------------------------
   const day = new Date();
   console.log(day);
 
@@ -219,7 +220,7 @@
   console.log((day4 - day3) / (24 * 60 * 60 * 1000)); // 　日単位での計算結果になる
 
 
-// windowオブジェクト
+// windowオブジェクト ---------------------------
   // window.alert('hello');
   // alert('hey'); // windowは省略できる
 
@@ -227,7 +228,7 @@
   // console.log(answer); // okならtrue キャンセルならfalse が返ってくる
 
 
-// setInterval
+// setInterval ---------------------------
   // let i = 0; //カウンター用の変数
 
   // const showTime = () => {
@@ -241,21 +242,34 @@
   // let timerId = setInterval(showTime, 1000); // showTimeに()をつけないことに注意!
 
 
-// setTimeout 指定した時間の後に1回だけ処理を実行するためのメソッド
-  let i = 0;
-  const showTime1 = () => {
-    console.log(new Date());
-    let timerId = setTimeout(showTime1, 1000); // setTimeoutで繰り返し処理をすることもできる
-    i++;
-    if (i > 2) {
-      clearTimeout(timerId);
-    }
-  };
+// setTimeout 指定した時間の後に1回だけ処理を実行するためのメソッド ---------------------
+  // let i = 0;
+  // const showTime1 = () => {
+  //   console.log(new Date());
+  //   let timerId = setTimeout(showTime1, 1000); // setTimeoutで繰り返し処理をすることもできる
+  //   i++;
+  //   if (i > 2) {
+  //     clearTimeout(timerId);
+  //   }
+  // };
 
-  showTime1();
+  // showTime1();
 
   // setIntervalは一定時間ごとに処理を実行する命令
   // setTimeoutはあくまでも一定時間後に処理を実行する命令
   // システムに負荷をかけずに繰り返し処理を行いたい場合はsetTimeout()もよく使われる
+
+
+// 例外処理
+  const hello = 'hello';
+  console.log(hello.toUpperCase());
+  console.log('finish!');
+
+  const int = 999;
+  try {
+    console.log(int.toUpperCase());
+  } catch (e) {
+    console.log(e.message);
+  }
 
 }
