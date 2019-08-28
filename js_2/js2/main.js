@@ -85,4 +85,11 @@
   a.pop(); // 末尾の要素を削除
   console.log(a);
 
+  a.splice(2, 0, 6, 7); //第一引数に指定したインデックスの前を変更、第二引数は削除する場合に指定
+  console.log(a);
+
+  const removed = a.splice(1, 2); // 第一引数に指定したインデックスから2つ削除
+  console.log(a);
+  console.log(removed);
+
 }
