@@ -22,3 +22,10 @@ body {
 .box {
   cursor: pointer;
 }
+
+.shake:hover {
+  animation-name: shake;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
