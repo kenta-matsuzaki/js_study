@@ -13,3 +13,12 @@ body {
   width: 335px;
   margin: 30px auto;
 }
+
+.boxes {
+  font-size: 0;
+  margin-bottom: 40px;
+}
+
+.box {
+  cursor: pointer;
+}
