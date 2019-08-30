@@ -13,7 +13,11 @@
     var i;
     for (i = 0; i < boxes.length; i++) {
       boxes[i].addEventListener('click', function() {
-        this.src = 'image/' + contents[Math.floor(Math.random() * contents.length)];
+        var j;
+        for (j = 0; j < boxes.length; j++) {
+          boxes[j].src = 'image/' + contents[Math.floor(Math.random() * contents.length)];
+          boxes[j].className = 'box disabled';
+        }
         this.className = 'box';
       });
     }
